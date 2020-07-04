@@ -1,0 +1,421 @@
+// presettings
+h1,h2,h3,h4,h5
+    margin: 0
+    padding: 0
+    
+body
+    color: #585858
+    font-size: 16px
+    margin: 0
+    font-family: 'Open Sans', sans-serif
+    overflow-x: hidden
+    
+.button
+    text-decoration: none
+    color: #ffffff
+    background-color: #ff2d2d
+    border: 3px solid #ff2d2d
+    border-radius: 5px
+    padding: 20px 60px
+    transition: background-color .1s linear
+
+    width: 50%
+    font-size: 18px
+    font-weight: 700
+.button:hover
+    background-color: #ffffff
+    color: #ff2d2d
+
+//container
+.container
+    padding: 110px 0
+.container--header
+    padding: 30px 0 0
+.container__title
+    font-size: 42px
+    font-weight: 700
+    
+    text-transform: uppercase
+.container__subtitle
+    margin: 30px auto
+.container__subtitle:after
+    content: ""
+    display: block
+    width: 110px
+    height: 3px
+    background-color: #ff3b3b
+    margin: 30px 0 80px
+.col-middle.container__title
+    text-align: center
+.col-middle.container__subtitle
+    text-align: center
+.col-middle.container__subtitle:after
+    margin: 30px auto 80px
+//header 
+header
+    background-color: #f6f2f2
+    padding-bottom: 120px
+.row-h-2
+    margin-top: 110px
+.container
+    max-width: 1250px
+.head
+    margin-bottom: 100px
+.head.fixed
+    position: fixed
+    right: 0
+    left: 0
+    top: 0
+    z-index: 1000
+    
+.navbar__wrap
+    
+nav
+    background-color: #313030
+    padding: 0
+    color: #e9bebe
+    font-size: 14px
+    font-weight: 700
+    display: flex
+    position: relative
+.navbar__item
+    padding: 35px 20px
+    cursor: pointer
+    text-transform: uppercase
+    margin-top: 10px
+.navbar__item:hover
+    background-color: #ff3f40
+.navbar__item.active
+    background-color: #ff3f40
+
+
+.head.active .navbar__item
+    display: block
+
+.header__title
+    font-size: 60px
+    font-weight: 800
+    color: #000000
+    text-transform: uppercase
+.header__subtitle
+    color: #9a9898
+    margin: 35px 0 60px
+.video img
+    max-width: 100%
+    height: auto
+    
+//burger menu
+
+.burger__menu
+    margin: 20px 0  
+    position: relative
+    cursor: pointer
+    opacity: 0
+    
+.burger__menu span
+    cursor: pointer
+    color: transparent
+    display: block
+    font-size: 0
+    height: 4px
+    width: 30px
+    background-color: #ffffff
+    opacity: 1
+.burger__menu span:after
+    position: absolute
+    content: ""
+    display: block
+    
+    width: 100%
+    height: 4px
+    top: -8px
+    right: 0
+    background-color: #ffffff
+    cursor: pointer
+    opacity: 1
+.burger__menu span:before
+    position: absolute
+    content: ""
+    display: block
+    
+    width: 100%
+    height: 4px
+    bottom: -8px
+    right: 0
+    background-color: #ffffff
+    cursor: pointer
+    opacity: 1
+.burger__menu.active  span
+    background-color: transparent
+.burger__menu.active span:before
+    transform-origin: left top
+    transform: rotate(-45deg) translateY(3px)
+.burger__menu.active  span:after
+    transform-origin: left bottom
+    transform: rotate(45deg) translateY(-3px)
+.navbar.active .navbar__item
+    display: block
+
+// services
+.services .container
+    border-bottom: 2px solid #dddddd
+.services__title
+    font-size: 48px
+    font-weight: 700
+    color: #585858
+    text-transform: uppercase
+.services__subtitle
+    color: #9a9898
+    margin: 60px 0
+.service
+    flex-wrap: wrap
+.service__item
+    width: 41%
+    margin-left: 45px
+    margin-top: 55px
+.service__item--1
+    margin-top: 0
+.service__title
+    font-size: 24px
+    font-weight: 600
+    margin: 20px 0
+.service__text
+    color: #c5c5c5
+
+//products
+.products__row--middle
+    margin-bottom: 70px
+.products__pick
+    justify-content: space-between
+.pick__item
+    text-transform: uppercase
+    color: #737373
+    cursor: pointer
+    font-size: 22px
+
+.pick__item:hover
+    color: #ff7b7b
+.pick__images
+    flex-wrap: wrap
+    justify-content: space-between
+.pick__img
+    margin: 0 auto 10px
+.pick__img img
+    max-width: 100%
+    height: auto
+    
+
+//team
+
+.team__title
+    text-transform: uppercase
+    font-size: 30px
+    font-weight: 600
+.team__text
+    margin: 35px 0 
+.social__item
+    margin-left: 25px
+    text-decoration: none
+    color: #838383
+.social__item:hover
+    text-decoration: underline
+.social__item:first-child
+    margin-left: 0
+
+.team__images
+    justify-content: space-between
+    margin-top: 60px
+    flex-wrap: wrap
+
+.team__item
+    margin: 0 auto 20px
+    position: relative
+    cursor: pointer
+    border-right: 1px solid #ffffff
+.team__name
+    position: absolute
+    display: none
+    width: 175px
+    background-color: #7a786e
+    text-align: center
+    bottom: 0
+    left: 0 
+    z-index: 1
+
+    color: #e8e8e7
+    font-size: 18px
+    font-weight: 600
+    padding: 14px
+.team__item:hover
+    border-color: #f7e9d9
+.team__item:hover .team__name
+    display: block
+//form1
+.form1
+    background-color: #f5f0dd
+.form__title
+    color: #fdfcf8
+    font-size: 42px
+    font-weight: 700
+    text-align: center
+.form__subtitle
+    color: #fdfcf8
+    margin: 45px 0 60px
+    text-align: center
+.form__subs
+    max-width: 760px
+    margin: 0 auto
+
+.form__subs input
+    width: 455px
+    padding: 34px
+    border: none
+    border-radius: 5px
+input:placeholder
+    color: #828282
+    font-size: 16px
+    font-family: 'Open Sans', sans-serif
+.form__subs button
+    border-radius: 5px
+    text-transform: uppercase
+    font-size: 18px
+    font-weight: 700
+    background-color: #ff2d2d
+    color: #ffffff
+    padding: 32px 55px
+    margin-left: 30px
+.form__subs button:focus
+    outline: none
+// footer
+.firstlayer
+    justify-content: space-between
+    flex-wrap: wrap
+.firstlayer__input
+    padding: 30px 50px
+    border-radius: 5px
+    border: none
+    background-color: #e5e5e5 
+.second__layer input
+    background-color: #e5e5e5 
+    padding: 40px 50px
+    border-radius: 5px
+    border: none
+    width: 100%
+    height: 250px
+    margin: 45px 0
+.third__layer button
+    width: 100%
+    border: none
+    padding: 30px 0
+    color: #ffffff
+    background-color: #ff3b3b
+    text-transform: uppercase
+    font-size: 18px
+    font-weight: 700
+.third__layer button:focus
+    outline: none
+.contact
+    color: #e0e0e0
+    background-color: #2d2d2d
+    margin-right: -1000px
+    height: 100%
+    position: relative
+    &__content
+        position: absolute
+        top: 50%
+        left: 45px 
+        z-index: 1
+        transform: translateY(-50%)
+    &__title
+        text-transform: uppercase
+        font-size: 18px
+        font-weight: 700
+    &__item
+        margin-top: 30px
+// copyright
+.copyright
+    background-color: #313030
+    &__text
+        color: #b8b8b8
+.container--copyright
+    padding: 60px 0
+.socials
+    width: 200px
+    justify-content: space-between
+.socials__item
+    border-radius: 50%
+    background-color: #ebebeb
+    
+    width: 35px
+    padding: 5px 0
+    text-align: center
+    cursor: pointer
+@media screen and ( max-width: 1200px )
+    .service__item
+        margin-top: 40px
+        margin-left: 0
+    .service__item-right
+        margin-left: 20px
+    //footer
+    .contact
+        height: 0
+        margin: 0
+        width: 100%
+    .contact__content
+        width: 100%
+        left: 0
+        background-color: #2d2d2d
+        padding: 20px
+        margin: 150px 0 
+        text-align: center
+    //copyright
+    .copyright
+        margin-top: 195px
+@media screen and ( max-width: 990px )
+    .video
+        margin-top: 40px
+    //pick
+    .pick__item
+        font-size: 14px
+    //form1
+    .form__subs input
+        width: 100%
+    .form__subs button
+        width: 100%
+        margin: 10px 0 0
+    //copyright
+    .socials-wrap
+        margin-top: 20px
+@media screen and ( max-width: 770px  )
+    .firstlayer input
+        width: 100%
+    .firstlayer input:last-child
+        margin-top: 45px
+@media screen and ( max-width: 576px )
+
+    // navbar
+    .navbar
+
+        flex-direction: column
+    
+    .navbar__item
+        display: none
+        opacity: 1
+    .burger__menu
+        opacity: 1
+    //header
+    .header__title
+        font-size: 36px
+    //container
+    .container__title
+        font-size: 30px
+    .container__subtitle
+        font-size: 22px
+    //services
+    .service__item
+        width: 100%
+        margin: 30px auto 0
+    //pick
+    .pick__item
+        font-size: 9px
+    
