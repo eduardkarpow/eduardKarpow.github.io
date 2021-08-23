@@ -1,1 +1,1 @@
-html/main.html
+./html/main.html
