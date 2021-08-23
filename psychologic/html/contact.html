@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pontano+Sans&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="../style.css" type = "text/css">
+    <script src="https://kit.fontawesome.com/0b7ae8aed2.js" crossorigin="anonymous"></script>
+    <title>Contact</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-row">
+            <a href="./main.html" class="nav__logo">Clove therapy</a>
+            <div class="nav__links-row">
+                <div class="nav__links-items">
+                    <a href="./about.html" class="nav__item">About</a>
+                    <a href="./services.html" class="nav__item">Services</a>
+                    <a href="./team.html" class="nav__item">Team</a>
+                    <a href="./blog.html" class="nav__item">Blog</a>
+                    <a href="./contact.html" class="nav__item selected">Contact</a>
+                </div>
+                    <a href="./booking.html" class="nav__button button">GET STARTED</a>
+            </div>
+            
+                        
+            <div class="nav__burger">
+                <span>2</span>
+                <span>2</span>
+            </div>
+        </div>
+        <div class="nav-col">
+                <a href="./about.html" class="nav__item">About</a>
+                <a href="./services.html" class="nav__item">Services</a>
+                <a href="./team.html" class="nav__item">Team</a>
+                <a href="./blog.html" class="nav__item">Blog</a>
+                <a href="./contact.html" class="nav__item">Contact</a>
+                <a href="./booking.html" class="nav__button button">GET STARTED</a>
+        </div>
+    </nav>
+    <div class="contact">
+        <div class="contact__info">
+            <div class="contact__title title-bold">Contact us.</div>
+            <div>email@example.com</div>
+            <div class="contact__tel">(555) 555-5555</div>
+            <div>123 Demo Street</div>
+            <div class="contact__location">New York, NY 12345</div>
+            <div class="socials">
+                <a href = "#"><i class="fab fa-instagram"></i></a>
+                <a href = "#"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+        <form action="submit" class="contact__form">
+            <div class="contact__field">
+                <legend class = "contact__legend">Name*</legend>
+                
+                <div class="field__item short">
+                    <label for="name">
+                        <div class="contact__border"><input class = "contact__input" name = "name" type="text"></div>
+                        <div class = "contact__label">First Name</div>
+                    </label>
+                </div>
+                <div class="field__item short">
+                    <label for="surname">
+                        <div class="contact__border"><input class = "contact__input" name = "surname" type="text"></div>
+                        <div class = "contact__label">Last Name</div>
+                    </label>
+                </div>
+               
+            </div>
+            <div class="contact__field">
+                <legend class = "contact__legend">Email*</legend>
+                
+                <div class="field__item long">
+                    <label for="email">
+                        <div class="contact__border"><input class = "contact__input" name = "email" type="email"></div>
+                    </label>
+                </div>
+            </div>
+            <div class="contact__field">
+                <legend class = "contact__legend">Message*</legend>
+                
+                <div class="field__item long">
+                    <label for="mes">
+                        <div class="contact__border"><textarea class = "contact__textarea" name = "mes" type="text"></textarea></div>
+                    </label>
+                </div>
+            </div>
+            <button class="button-send">Send</button>
+        </form>
+    </div>
+    <footer>
+        <div class="footer__contact">
+            <div class="footer__text">Questions?</div>
+            <a href="./contact.html" class="footer__href href">Contact us</a>
+            <div class="socials">
+                <a href = "#"><i class="fab fa-instagram"></i></a>
+                <a href = "#"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+        <div class="footer__nav">
+            <div><a href="./about.html" class="footer__href href">About</a></div>
+            <div><a href="./our-approach.html" class="footer__href href">Our approach</a></div>
+            <div><a href="./services.html" class="footer__href href">Services</a></div>
+            <div><a href="./blog.html" class="footer__href href">Blog</a></div>
+            <div><a href="./team.html" class="footer__href href">Team</a></div>
+            <div><a href="./booking.html" class="footer__href href">Get started</a></div>
+        </div>
+    </footer>
+    <script type = "text/javascript" src = "../js/script.js"></script>
+</body>
+</html>
