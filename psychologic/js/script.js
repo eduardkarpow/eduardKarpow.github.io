@@ -1,6 +1,6 @@
 
 const burger = document.getElementsByClassName('nav__burger')[0];
-const header = document.getElementsByClassName('head')[0];
+const header = document.getElementsByTagName('header')[0];
 const nav = document.getElementsByTagName('nav')[0];
 let borders = document.getElementsByClassName('border');
 if (!borders.length) {
@@ -44,10 +44,13 @@ for(option of options){
         
     };
 }
-    
-
-/*select.onclick = () => {
-    debugger;
-    
-    
-}*/
+// events
+const eventsheads = document.getElementsByClassName('events__head');
+if(eventsheads){
+    for(head of eventsheads) {
+        head.onclick = event => {
+            let target = event.target.classList[0] === 'events__head' ? event.target : event.target.parentElement;
+            target.classList.toggle('active');
+        }
+    }
+}
