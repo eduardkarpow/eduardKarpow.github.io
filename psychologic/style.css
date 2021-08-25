@@ -11,6 +11,9 @@ i {
     font-size: 30px;
     margin-right: 10px;
 }
+div, span, a {
+    font-family: 'Alice', serif;
+}
 i:hover {
     opacity: .6;
 }
@@ -19,7 +22,6 @@ body {
     padding: 0;
 }
 * {
-    font-family: Pontano Sans;
     color: black;
     transition: all .4;
 }
